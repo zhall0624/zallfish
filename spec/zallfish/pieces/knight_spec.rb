@@ -9,7 +9,7 @@ describe Zallfish::Pieces::Knight do
   end
 
   describe "#moves" do
-    it 'should have valid moves' do
+    it 'should move in an L shape' do
       expected = [
         board.squares['b'][2],
         board.squares['c'][3],
