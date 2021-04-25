@@ -9,6 +9,38 @@ module Zallfish
       @squares = generate_squares
     end
 
+    def next_file_square(square)
+      squares[square.file][square.rank + 1]
+    end
+
+    def prev_file_square(square)
+      squares[square.file][square.rank - 1]
+    end
+
+    def next_rank_square(square)
+      squares[(square.file.ord + 1).chr][square.rank]
+    end
+
+    def prev_rank_square(square)
+      squares[(square.file.ord - 1).chr][square.rank]
+    end
+
+    def next_right_diagonal_square(square)
+      squares[(square.file.ord + 1).chr][square.rank + 1]
+    end
+
+    def prev_right_diagonal_square(square)
+      squares[(square.file.ord - 1).chr][square.rank - 1]
+    end
+
+    def next_left_diagonal_square(square)
+      squares[(square.file.ord - 1).chr][square.rank + 1]
+    end
+
+    def prev_left_diagonal_square(square)
+      squares[(square.file.ord + 1).chr][square.rank - 1]
+    end
+
     private
 
     def generate_squares

@@ -1,4 +1,4 @@
-RSpec.describe Zallfish::Square do
+describe Zallfish::Square do
   let(:klass) { Zallfish::Square }
 
   describe 'valid positions' do
