@@ -14,8 +14,14 @@ module Zallfish
         ]
       end
 
-      def to_s
-        'K'
+      private
+
+      def black_unicode
+        "\u{265A}"
+      end
+
+      def white_unicode
+        "\u{2654}"
       end
     end
   end

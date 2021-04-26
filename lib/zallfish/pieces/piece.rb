@@ -18,6 +18,10 @@ module Zallfish
         square.piece = self
       end
 
+      def to_s
+        color == WHITE ? white_unicode : black_unicode
+      end
+
       private
 
       def moved?

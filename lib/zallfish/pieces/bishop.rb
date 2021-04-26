@@ -5,8 +5,14 @@ module Zallfish
         [:up_right, :down_left, :up_left, :down_right].reduce([]) { |moves, direction| moves + direction_moves(direction) }
       end
 
-      def to_s
-        'B'
+      private
+
+      def white_unicode
+        "\u{2657}"
+      end
+
+      def black_unicode
+        "\u{265D}"
       end
     end
   end

@@ -14,8 +14,14 @@ module Zallfish
         ].compact
       end
 
-      def to_s
-        'N'
+      private
+
+      def black_unicode
+        "\u{265E}"
+      end
+
+      def white_unicode
+        "\u{2658}"
       end
     end
   end

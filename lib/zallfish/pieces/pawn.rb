@@ -8,10 +8,6 @@ module Zallfish
         valid_moves
       end
 
-      def to_s
-        'p'
-      end
-
       private
 
       def capture_moves
@@ -21,6 +17,14 @@ module Zallfish
       def enemy_piece?(test_square)
         return false if test_square.piece.nil?
         color != test_square.piece.color
+      end
+
+      def black_unicode
+        "\u{265F}"
+      end
+
+      def white_unicode
+        "\u{2659}"
       end
     end
   end
