@@ -13,6 +13,10 @@ module Zallfish
           board.squares[(square.file.ord - 1).chr][square.rank - 2],
         ].compact
       end
+
+      def to_s
+        'N'
+      end
     end
   end
 end

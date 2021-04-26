@@ -15,6 +15,11 @@ module Zallfish
       !piece.nil?
     end
 
+    def to_s
+      return '[ ]' if piece.nil?
+      return "[#{piece}]"
+    end
+
     private
 
     def validate_rank

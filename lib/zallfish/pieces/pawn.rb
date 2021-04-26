@@ -8,6 +8,10 @@ module Zallfish
         valid_moves
       end
 
+      def to_s
+        'p'
+      end
+
       private
 
       def capture_moves

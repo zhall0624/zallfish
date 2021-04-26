@@ -13,6 +13,10 @@ module Zallfish
           board.prev_left_diagonal_square(square)
         ]
       end
+
+      def to_s
+        'K'
+      end
     end
   end
 end
